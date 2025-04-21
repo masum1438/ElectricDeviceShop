@@ -4,8 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/JqueryUI/jquery-ui.js"></script>
+    <link href="~/Scripts/JqueryUI/jquery-ui.css" rel="stylesheet" />
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
     @{
         string ExistUserName = "";
         if (Session["UserName"] != null)
@@ -17,30 +23,36 @@
             }
         }
     }
-<script>
-     var ExistUserName = '@ExistUserName';
-     if (ExistUserName == "") {
-         window.location.href = '@Url.Action("Login","Auth")';
-     }
-     else {
-         sessionStorage.setItem("SesssionData", ExistUserName);
-     }
-    function DoLogout() {
-        sessionStorage.clear();
-         window.location.href = '@Url.Action("Logout","Auth")';
-     }
-@*
-     $(document).ready(function () {
-         $('body').find('.clsDateTime').each(function () {
-             $(this).datepicker({
-                 dateFormat: 'dd/mm/yy'
-             });
-         })
-     })*@
+    <script>
+        var ExistUserName = '@ExistUserName';
+        if (ExistUserName == "") {
+            window.location.href = '@Url.Action("Login", "Auth")';
+        }
+        else
+        {
+            sessionStorage.setItem("SesssionData", ExistUserName);
+        }
+        function DoLogout() {
+            window.location.href = '@Url.Action("Logout", "Auth")';
+        }
 
-</script>
+        $(document).ready(function () {
+            $('body').find('.clsDateTime').each(function () {
+                $(this).datepicker({
+                    dateFormat: 'dd/mm/yy'
+                });
+            })
+        })
+
+    </script>
+    <style>
+        #ui-datepicker-div {
+            z-index: 10001 !important;
+        }
+    </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
             @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
@@ -57,12 +69,13 @@
                     @{
                         if (ExistUserName != "")
                         {
-                            <li class="nav-link " style="cursor:pointer " onclick="DoLogout()">Logout @ExistUserName</li>
+                            <li class="nav-link" style="cursor:pointer" onclick="DoLogout()">Logout @ExistUserName</li>
                             @*<form method="post" action="@Url.Action("DoLogout","Auth")">
-                                
+
                 </form>*@
                         }
                     }
+
                 </ul>
             </div>
         </div>
@@ -75,8 +88,23 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @{
+        string SessionMessage = "";
+        if (Session["Message"] == null)
+        {
+            Session["Message"] = "";
+        }
+        SessionMessage = Session["Message"].ToString();
+        Session["Message"] = "";
+    }
+    <script>
+        var bodyMessage = '@SessionMessage';
+        if (bodyMessage != '') {
+            alert(bodyMessage);
+            bodyMessage = '';
+        }
+    </script>
+    @* @Scripts.Render("~/bundles/bootstrap")*@
     @RenderSection("scripts", required: false)
 </body>
 </html>
