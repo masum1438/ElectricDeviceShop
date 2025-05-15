@@ -14,6 +14,7 @@ namespace pracLogin.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult DoLogin(string txtUserName, string txtPassword)
         {
@@ -26,7 +27,7 @@ namespace pracLogin.Controllers
                 Message = "Authorized";
                 Session["UserName"] = txtUserName;
                 //return Redirect("www.google.com"); 
-                return RedirectToAction("About", "Home");
+                return RedirectToAction("Index", "Home");
             }
             ViewBag.Message = Message;
             //return RedirectToAction("Dashboard", "Inventory");
@@ -66,6 +67,43 @@ namespace pracLogin.Controllers
             //return RedirectToAction("Dashboard", "Inventory");
             return View("Login");
         }
+        [HttpGet]
+        public ActionResult SignUp()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult DoSignUp(FormCollection frmColl)
+        {
+            Session["UserName"] = "";
+            string Message = "Unauthorized";
+            String Password = frmColl["Password"]; 
+            String ConfirmPassword = frmColl["ConfirmPassword"];
+            // Simple password match check
+            if (Password != ConfirmPassword)
+            {
+                ViewBag.Message = "Password and Confirm Password do not match.";
+                return View("SignUp");
+            }
+
+            // Example: Save user to database (replace this with actual logic)
+            // You can create a model and save the user data accordingly.
+            // This is just a placeholder for demonstration:
+            
+            BaseEquipment baseEquipment = new BaseEquipment();
+            bool isSaved = baseEquipment.SaveUserToDatabase(frmColl);
+
+            if (isSaved)
+            {
+                Session["UserName"] = frmColl["Username"];
+                Message = "Authorized";
+                return RedirectToAction("Index", "Home");
+            }
+
+            ViewBag.Message = Message;
+            return View("SignUp");
+        }
+
 
     }
 }

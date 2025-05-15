@@ -25,6 +25,11 @@
             <button type="submit" class="btn btn-primary" style="width:100%">Submit</button>
             <div id="emailHelp" class="form-text">@ViewBag.Message</div>
         </form>
+        <button type="button" class="btn btn-primary text-white" style="width:100%"
+                onclick="location.href='@Url.Action("SignUp", "Auth")'">
+            Signup
+        </button>
+
         <div style="color:blue">@Html.ActionLink("Forget Password", "ResetPassword", "Auth", new { area = "" })</div>
 
         @*Reset password section

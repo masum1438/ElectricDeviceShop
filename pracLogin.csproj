@@ -110,6 +110,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\EquipmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Global.asax.cs">
@@ -138,6 +139,36 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Images\1.jpeg" />
+    <Content Include="Content\Images\10.jpeg" />
+    <Content Include="Content\Images\11.jpeg" />
+    <Content Include="Content\Images\12.jpeg" />
+    <Content Include="Content\Images\13.jpeg" />
+    <Content Include="Content\Images\14.jpeg" />
+    <Content Include="Content\Images\15.jpeg" />
+    <Content Include="Content\Images\16.jpeg" />
+    <Content Include="Content\Images\17.jpeg" />
+    <Content Include="Content\Images\2.jpeg" />
+    <Content Include="Content\Images\3.jpeg" />
+    <Content Include="Content\Images\4.jpeg" />
+    <Content Include="Content\Images\5.jpeg" />
+    <Content Include="Content\Images\6.jpeg" />
+    <Content Include="Content\Images\7.jpeg" />
+    <Content Include="Content\Images\8.jpeg" />
+    <Content Include="Content\Images\9.jpeg" />
+    <Content Include="Content\Images\kayboard2.jpeg" />
+    <Content Include="Content\Images\keyboard1.jpeg" />
+    <Content Include="Content\Images\l1.jpg" />
+    <Content Include="Content\Images\l2.jpg" />
+    <Content Include="Content\Images\l3.jpg" />
+    <Content Include="Content\Images\monitor1.jpeg" />
+    <Content Include="Content\Images\monitor2.jpeg" />
+    <Content Include="Content\Images\mouse1.jpeg" />
+    <Content Include="Content\Images\mouse2.jpeg" />
+    <Content Include="Content\Images\mousepad 2.jpg" />
+    <Content Include="Content\Images\18.jpeg" />
+    <Content Include="Content\Images\stand1.jpeg" />
+    <Content Include="Content\Images\stand2.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -194,6 +225,9 @@
     <Content Include="Views\Inventory\_PartialEquiAssignedList.cshtml" />
     <Content Include="Views\Inventory\_PartialModalEquipment.cshtml" />
     <Content Include="Views\Inventory\CustomerAssignment.cshtml" />
+    <Content Include="Views\Home\_CartPartial.cshtml" />
+    <Content Include="Views\Equipment\Checkout.cshtml" />
+    <Content Include="Views\Auth\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

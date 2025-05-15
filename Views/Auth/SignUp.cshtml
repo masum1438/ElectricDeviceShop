@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_LayoutAuth.cshtml";
+}
+
+<div class="container mt-5" style="max-width: 600px;">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white text-center">
+            <h4>Create an Account</h4>
+        </div>
+        <div class="card-body">
+            <form method="post" action="@Url.Action("DoSignUp","Auth")">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="Username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input type="text" class="form-control" id="mobile" name="Mobile" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="age" name="Age" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" name="Address" rows="2" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="serviceType" class="form-label">Service Type</label>
+                    <select class="form-select" id="serviceType" name="ServiceType" required>
+                        <option value="">-- Select Service Type --</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Repair">Repair</option>
+                        <option value="Installation">Installation</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="Password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="ConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Sign Up</button>
+            </form>
+        </div>
+        <div class="card-footer text-center mb-2">
+            Already have an account? 
+            <button type="button" class="btn btn-primary text-white" style="width:100%"
+                    onclick="location.href='@Url.Action("Login", "Auth")'">
+                Login
+            </button>
+        </div>
+    </div>
+</div>
+
+

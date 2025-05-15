@@ -1,0 +1,232 @@
+﻿@using pracLogin.Models
+@using System.Data
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    DataTable dataTable = BaseCustomer.ListCustomer();
+    int UserId = 2;
+    string ExistUserName = "";
+    if (Session["UserName"] != null)
+    {
+        string SessionData = Session["UserName"].ToString();
+        if (!String.IsNullOrEmpty(SessionData))
+        {
+            ExistUserName = Session["UserName"].ToString();
+        }
+    }
+    var pdata = (from p in dataTable.AsEnumerable()
+                 select new
+                 {
+                     CustomerID = p.Field<Int32>("CustomerID").ToString(),
+                     CustomerName = p.Field<string>("CustomerName").ToString(),
+                     CustomerMobile = p.Field<string>("CustomerMobile").ToString(),
+                 }).ToList();
+
+    BaseEquipment baseEquipment = new BaseEquipment();
+    List<BaseEquipment> LstEquipment = baseEquipment.LstEquipment();
+    var jsEquipmentList = Json.Encode(LstEquipment.Select(e => new
+    {
+        e.EquipmentId,
+        e.Stock
+    }));
+}
+
+<script>
+    $(document).ready(function () {
+        // Load cart data
+        var loadCartData = function() {
+            var lsData = localStorage.getItem("CartProducts");
+            return JSON.parse(lsData || "[]");
+        };
+
+        var customerData = @Html.Raw(Json.Encode(pdata));
+        var stockData = @Html.Raw(jsEquipmentList);
+        var currentUserName = '@ExistUserName';
+
+        // Render shipping form
+        $("#pDetails").html(`
+            <form id="bulkCheckoutForm">
+                <div class="form-group mb-3">
+                    <label for="txtAddress">Shipping Address</label>
+                    <input type="text" id="txtAddress" name="txtAddress" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-success">Submit All Orders</button>
+            </form>
+        `);
+
+        // Render product list
+        var renderProductList = function() {
+            var cart = loadCartData();
+
+            // Inject stock info
+            cart.forEach(function(item) {
+                var stockMatch = stockData.find(e => e.EquipmentId === item.EquipmentId);
+                item.Stock = stockMatch ? stockMatch.Stock : 0;
+            });
+
+            $('#dvCheckputProducts').empty();
+
+            if (cart.length === 0) {
+                $('#dvCheckputProducts').html('<p class="text-center p-3">Your cart is empty</p>');
+                return;
+            }
+
+            cart.forEach(function(obj) {
+                $('#dvCheckputProducts').append(`
+                    <div class="row mb-3 product-card" id="product-${obj.EquipmentId}">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="/${obj.ImageUrl}" class="img-fluid rounded-start cart-item-img" alt="${obj.EquipmentName}" style="height: 100% !important;
+        width: 100% !important;"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">${obj.EquipmentName}</h6>
+                                            <p class="card-text">$${obj.Price.toFixed(2)}</p>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary me-2 btn-decrease" data-id="${obj.EquipmentId}">-</button>
+                                                <span class="quantity" id="qty-${obj.EquipmentId}">${obj.quantity || 1}</span>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary ms-2 btn-increase" data-id="${obj.EquipmentId}">+</button>
+                                                <small class="text-muted ms-3">(Stock: ${obj.Stock})</small>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-danger btn-delete" data-id="${obj.EquipmentId}">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            });
+        };
+
+        // Initial render
+        renderProductList();
+
+        // Quantity handlers
+        $(document).on("click", ".btn-increase", function() {
+            var id = $(this).data("id");
+            var cart = loadCartData();
+            var item = cart.find(p => p.EquipmentId == id);
+
+            if (item) {
+                item.quantity = parseInt(item.quantity) || 1;
+                if (item.quantity < item.Stock) {
+                    item.quantity++;
+                    localStorage.setItem("CartProducts", JSON.stringify(cart));
+                    $(`#qty-${id}`).text(item.quantity);
+                } else {
+                    alert("Cannot exceed stock quantity.");
+                }
+            }
+        });
+
+        $(document).on("click", ".btn-decrease", function() {
+            var id = $(this).data("id");
+            var cart = loadCartData();
+            var item = cart.find(p => p.EquipmentId == id);
+
+            if (item) {
+                item.quantity = parseInt(item.quantity) || 1;
+                if (item.quantity > 1) {
+                    item.quantity--;
+                    localStorage.setItem("CartProducts", JSON.stringify(cart));
+                    $(`#qty-${id}`).text(item.quantity);
+                } else {
+                    alert("Minimum quantity is 1.");
+                }
+            }
+        });
+
+        // Delete handler - SIMPLIFIED AND GUARANTEED TO WORK
+        $(document).on("click", ".btn-delete", function() {
+            var id = $(this).data("id");
+            var cart = loadCartData();
+
+            // Filter out the deleted item
+            var updatedCart = cart.filter(item => item.EquipmentId != id);
+
+            // Save back to localStorage
+            localStorage.setItem("CartProducts", JSON.stringify(updatedCart));
+
+            // Completely re-render the product list
+            renderProductList();
+        });
+
+        // Submit all
+        $("#bulkCheckoutForm").on("submit", function(e) {
+            e.preventDefault();
+            var shippingAddress = $("#txtAddress").val();
+            if (!shippingAddress.trim()) {
+                alert("Please enter a shipping address.");
+                return;
+            }
+
+            var matchedCustomer = customerData.find(x => x.CustomerName === currentUserName);
+            if (!matchedCustomer) {
+                alert("User not matched.");
+                return;
+            }
+
+            var latestCart = loadCartData();
+            let failedItems = [];
+            let updatedCart = [...latestCart];
+            latestCart.forEach((obj) => {
+                if (obj.Stock < obj.quantity) {
+                    alert("Insufficient stock for " + obj.EquipmentName);
+                    failedItems.push(obj.EquipmentName);
+                    return; // Stop processing further items
+                }
+                let formData = new FormData();
+                formData.append("ddlCustomer", matchedCustomer.CustomerID);
+                formData.append("ddlEquipment", obj.EquipmentId);
+                formData.append("txtEquiCount", obj.quantity || 1);
+                formData.append("txtAddress", shippingAddress);
+                
+                $.ajax({
+                    url: "/Inventory/CustomerAssignment",
+                    method: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    async: false,
+                    success: function() {
+                        console.log("Submitted: " + obj.EquipmentName);
+                        // Remove the submitted item from updatedCart
+                        updatedCart = updatedCart.filter(item => item.EquipmentId !== obj.EquipmentId);
+                    },
+                    error: function() {
+                        failedItems.push(obj.EquipmentName);
+                    }
+                });
+            });
+            localStorage.setItem("CartProducts", JSON.stringify(updatedCart));
+            if (failedItems.length > 0) {
+                alert("Some items failed: " + failedItems.join(", "));
+                window.location.href = "/Inventory/Dashboard";
+            } else {
+                alert("All items submitted successfully!");
+               // localStorage.removeItem("CartProducts");
+                window.location.href = "/Inventory/Dashboard";
+            }
+        });
+    });
+</script>
+
+<div class="row">
+    <div class="col col-sm-8">
+        <div class="card">
+            <h5 class="card-header">Personal Details: @Session["UserName"]</h5>
+            <div class="card-body" id="pDetails"></div>
+        </div>
+    </div>
+    <div class="col col-sm-4">
+        <div class="card">
+            <h5 class="card-header">Product Details</h5>
+            <div class="card-body" id="dvCheckputProducts"></div>
+        </div>
+    </div>
+</div>

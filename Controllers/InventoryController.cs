@@ -74,12 +74,12 @@ namespace pracLogin.Controllers
         public ActionResult CustomerAssignment(FormCollection frmColl)
         {
 
-
-
             BaseEquipment baseEquipment = new BaseEquipment();
+            
             int ddlCustomer = Convert.ToInt32(frmColl["ddlCustomer"].ToString());
             int ddlEquipment = Convert.ToInt32(frmColl["ddlEquipment"].ToString());
             int txtEquiCount = Convert.ToInt32(frmColl["txtEquiCount"].ToString());
+            string txtAddress =frmColl["txtAddress"].ToString();
 
             List<BaseEquipment> LstEquipment = baseEquipment.LstEquipment();
 
@@ -106,5 +106,8 @@ namespace pracLogin.Controllers
                 return View();
             }
         }
+    
+   
+
     }
 }

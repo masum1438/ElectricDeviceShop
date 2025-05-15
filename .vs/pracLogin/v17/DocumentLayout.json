@@ -3,60 +3,90 @@
   "WorkspaceRootPath": "C:\\Users\\laptop\\source\\repos\\pracLogin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|c:\\users\\laptop\\source\\repos\\praclogin\\models\\baseequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|c:\\users\\laptop\\source\\repos\\praclogin\\views\\equipment\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\equipment\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\views\\home\\_cartpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\home\\_cartpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\models\\baseequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:models\\baseequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Models\\BaseAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquipmentList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\_PartialEquipmentList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialModalEquipment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\_PartialModalEquipment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\InventoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Controllers\\InventoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\Dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\Dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\CustomerAssignment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\CustomerAssignment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquiAssignedList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\_PartialEquiAssignedList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|c:\\users\\laptop\\source\\repos\\praclogin\\views\\auth\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\auth\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\CustomerAssignment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\CustomerAssignment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Models\\BaseCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\models\\baseaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:models\\baseaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\laptop\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\laptop\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseEquipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialModalEquipment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\_PartialModalEquipment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquipmentList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Inventory\\_PartialEquipmentList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Views\\Web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\ResetAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{463549F2-38C4-4F5D-B1C4-5084BA581C02}|pracLogin.csproj|solutionrelative:Models\\ResetAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +96,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,73 +112,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_PartialModalEquipment.cshtml",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialModalEquipment.cshtml",
-              "RelativeDocumentMoniker": "Views\\Inventory\\_PartialModalEquipment.cshtml",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialModalEquipment.cshtml",
-              "RelativeToolTip": "Views\\Inventory\\_PartialModalEquipment.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAywB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T11:35:31.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InventoryController.cs",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\InventoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InventoryController.cs",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\InventoryController.cs",
-              "RelativeToolTip": "Controllers\\InventoryController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T04:24:03.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Inventory\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Inventory\\Dashboard.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T04:24:46.055Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAzwGgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T05:28:27.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BaseAccount.cs",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseAccount.cs",
-              "RelativeDocumentMoniker": "Models\\BaseAccount.cs",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseAccount.cs",
-              "RelativeToolTip": "Models\\BaseAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T06:00:00.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "BaseEquipment.cs",
               "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseEquipment.cs",
               "RelativeDocumentMoniker": "Models\\BaseEquipment.cs",
               "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseEquipment.cs",
               "RelativeToolTip": "Models\\BaseEquipment.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAwwM8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAOYAAAAAAAAAAAArwCMBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T06:00:02.388Z",
               "EditorCaption": ""
@@ -156,14 +126,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_PartialEquipmentList.cshtml",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquipmentList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Inventory\\_PartialEquipmentList.cshtml",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquipmentList.cshtml",
-              "RelativeToolTip": "Views\\Inventory\\_PartialEquipmentList.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAxwFQAAAAGAAAAAAAAAA==",
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "Controllers\\InventoryController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAcwEwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T04:24:03.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_CartPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Home\\_CartPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\_CartPartial.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Home\\_CartPartial.cshtml",
+              "RelativeToolTip": "Views\\Home\\_CartPartial.cshtml",
+              "ViewState": "AgIAAIUAAAAAAAAAAAA3wCYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T11:34:36.892Z"
+              "WhenOpened": "2025-05-06T05:32:24.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_PartialEquiAssignedList.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquiAssignedList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\_PartialEquiAssignedList.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquiAssignedList.cshtml",
+              "RelativeToolTip": "Views\\Inventory\\_PartialEquiAssignedList.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T11:33:36.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Equipment\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipment\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Equipment\\Checkout.cshtml",
+              "RelativeToolTip": "Views\\Equipment\\Checkout.cshtml",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAQwLIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T04:14:19.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Auth\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Auth\\SignUp.cshtml",
+              "RelativeToolTip": "Views\\Auth\\SignUp.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T06:52:04.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -173,21 +196,36 @@
               "RelativeDocumentMoniker": "Views\\Inventory\\CustomerAssignment.cshtml",
               "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\CustomerAssignment.cshtml",
               "RelativeToolTip": "Views\\Inventory\\CustomerAssignment.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAADoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T11:56:48.195Z"
+              "WhenOpened": "2025-04-21T11:56:48.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAnwGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T05:27:17.762Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "_PartialEquiAssignedList.cshtml",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquiAssignedList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Inventory\\_PartialEquiAssignedList.cshtml",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquiAssignedList.cshtml",
-              "RelativeToolTip": "Views\\Inventory\\_PartialEquiAssignedList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T11:33:36.652Z"
+              "Title": "EquipmentController.cs",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\EquipmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EquipmentController.cs",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\EquipmentController.cs",
+              "RelativeToolTip": "Controllers\\EquipmentController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T04:09:42.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -197,13 +235,126 @@
               "RelativeDocumentMoniker": "Models\\BaseCustomer.cs",
               "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseCustomer.cs",
               "RelativeToolTip": "Models\\BaseCustomer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA2wCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:22:42.585Z"
+              "WhenOpened": "2025-04-21T11:22:42.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "BaseAccount.cs",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseAccount.cs",
+              "RelativeDocumentMoniker": "Models\\BaseAccount.cs",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\BaseAccount.cs",
+              "RelativeToolTip": "Models\\BaseAccount.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBUAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T06:00:00.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T05:41:22.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Auth\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Auth\\ResetPassword.cshtml",
+              "RelativeToolTip": "Views\\Auth\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T23:31:32.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T00:52:56.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T05:16:16.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BaseEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\laptop\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseEquipment.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseEquipment.cs",
+              "ToolTip": "C:\\Users\\laptop\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseEquipment.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseEquipment.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:23:56.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BaseCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\laptop\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseCustomer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseCustomer.cs",
+              "ToolTip": "C:\\Users\\laptop\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseCustomer.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\b4_training-main\\Ost_inventory_b4\\Ost_inventory_b4\\Models\\BaseCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T09:24:27.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_PartialModalEquipment.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialModalEquipment.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\_PartialModalEquipment.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialModalEquipment.cshtml",
+              "RelativeToolTip": "Views\\Inventory\\_PartialModalEquipment.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T11:35:31.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_PartialEquipmentList.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquipmentList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\_PartialEquipmentList.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Inventory\\_PartialEquipmentList.cshtml",
+              "RelativeToolTip": "Views\\Inventory\\_PartialEquipmentList.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T11:34:36.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Web.config",
               "RelativeDocumentMoniker": "Web.config",
@@ -216,7 +367,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T10:13:21.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Views\\Web.config",
               "RelativeDocumentMoniker": "Views\\Web.config",
@@ -225,30 +388,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-04-21T11:16:37.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:27:17.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ResetAccount.cs",
-              "DocumentMoniker": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\ResetAccount.cs",
-              "RelativeDocumentMoniker": "Models\\ResetAccount.cs",
-              "ToolTip": "C:\\Users\\laptop\\source\\repos\\pracLogin\\Models\\ResetAccount.cs",
-              "RelativeToolTip": "Models\\ResetAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T03:32:11.055Z"
             }
           ]
         }

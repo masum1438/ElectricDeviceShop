@@ -53,8 +53,8 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark" style="position:fixed;top:0px;z-index:3;width:100%; margin-bottom:70px">
+        <div class="container " style="">
             @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -66,13 +66,16 @@
                     <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Dashboard", "Dashboard", "Inventory", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">
+                        <a class="nav-link  " style="cursor:pointer" onclick="ShowCart()">Cart (<span id="spnCartCount">0</span>)</a>
+                    </li>
                     @{
                         if (ExistUserName != "")
                         {
                             <li class="nav-link" style="cursor:pointer" onclick="DoLogout()">Logout @ExistUserName</li>
                             @*<form method="post" action="@Url.Action("DoLogout","Auth")">
 
-                </form>*@
+                                </form>*@
                         }
                     }
 
@@ -80,7 +83,8 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+
+    <div class="container body-content" style="margin:80px;">
         @RenderBody()
         <hr />
         <footer>
@@ -106,5 +110,6 @@
     </script>
     @* @Scripts.Render("~/bundles/bootstrap")*@
     @RenderSection("scripts", required: false)
+    @Html.Partial("~/Views/Home/_CartPartial.cshtml")
 </body>
 </html>

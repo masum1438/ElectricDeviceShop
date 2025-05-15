@@ -1,0 +1,180 @@
+﻿<style>
+    .clsCart {
+        transition: all 300ms;
+        position: fixed;
+        width: 400px;
+        right: 0px;
+        top: 50px;
+        bottom: 0px;
+        background: yellow;
+    }
+
+    @@media only screen and (max-width: 600px) {
+        .clsCart {
+            width: 200px;
+        }
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        HideCart();
+        PopulateCart();
+    });
+
+    function HideCart() {
+        $('#dvCart').css('right', '-' + $('#dvCart').width() + 'px');
+    }
+
+    function ShowCart() {
+        $('#dvCart').show();
+        $('#dvCart').css('right', '0px');
+        PopulateCart();
+    }
+
+    var ListCartProduct = [];
+    var i = 0;
+
+    function AddToCart(EquipmentId) {
+       // if (event) event.preventDefault(); // ✅ Prevent anchor default behavior
+    if (i == 0) {
+        var LsData = localStorage.getItem("CartProducts");
+        if (LsData) {
+            var ListCartProductExist = JSON.parse(LsData);
+            $.each(ListCartProductExist, function(index, obj) {
+                ListCartProduct.push(obj);
+            });
+        }
+        i = 1;
+    }
+
+    // Get equipment details from server
+    $.ajax({
+        url: '@Url.Action("GetEquipmentDetails", "Equipment")',
+        type: 'GET',
+        data: { equipmentId: EquipmentId },
+        success: function(data) {
+            if (data.success) {
+                var existingProductIndex = ListCartProduct.findIndex(p => p.EquipmentId == data.equipment.EquipmentId);
+
+                if (existingProductIndex !== -1) {
+                    // Equipment exists - increment quantity
+                    if (!ListCartProduct[existingProductIndex].quantity) {
+                        ListCartProduct[existingProductIndex].quantity = 1;
+                    }
+                    ListCartProduct[existingProductIndex].Stock = data.equipment.Stock;
+                    ListCartProduct[existingProductIndex].quantity += 1;
+                } else {
+                    // Equipment doesn't exist - add to cart with quantity 1
+                    var equipmentWithQuantity = {
+                        EquipmentId: data.equipment.EquipmentId,
+                        EquipmentName: data.equipment.EquipmentName,
+                        Description: data.equipment.ProductDescription, // Fixed property name
+                        Price: data.equipment.EquipmentPrice, // Fixed property name
+                        ImageUrl: data.equipment.ImgUrl, // Fixed property name
+                        quantity: 1,
+                        Stock: data.equipment.Stock
+                    };
+                    ListCartProduct.push(equipmentWithQuantity);
+                }
+
+                localStorage.setItem("CartProducts", JSON.stringify(ListCartProduct));
+                PopulateCart();
+                alert('Equipment added to cart successfully');
+            } else {
+                alert('Error: ' + data.message);
+            }
+        },
+        error: function() {
+            alert('Error adding equipment to cart');
+        }
+    });
+}
+
+    function PopulateCart() {
+        var lsData = localStorage.getItem("CartProducts");
+        var ListCartProductNew = JSON.parse(lsData);
+        if (!lsData) {
+            $('#divCartItems').html('<p class="text-center">Your cart is empty</p>');
+            $('#CartTotalPrice').html('$0.00');
+            $('#spnCartCount').html('0');
+            return;
+        }
+
+      
+        var totalItems = ListCartProductNew.reduce((total, equipment) => {
+            return total + (equipment.quantity || 1);
+        }, 0);
+
+        var totalPrice = ListCartProductNew.reduce((total, equipment) => {
+            return total + (equipment.quantity || 1) * equipment.Price;
+        }, 0);
+
+        $('#CartTotalPrice').html('$' + totalPrice.toFixed(2));
+        $('#spnCartCount').html(totalItems);
+        $('#divCartItems').html('');
+
+        if (ListCartProductNew.length === 0) {
+            $('#divCartItems').html('<p class="text-center">Your cart is empty</p>');
+            return;
+        }
+
+        $.each(ListCartProductNew, function (index, obj) {
+            $('#divCartItems').append(`
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                    <img src="/${obj.ImageUrl}" class="img-fluid rounded-start cart-item-img" alt="${obj.EquipmentName}" style="height: 100% !important;width: 100% !important;" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">${obj.EquipmentName}</h6>
+                                    <p class="card-text">$${obj.Price.toFixed(2)}</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Qty: ${obj.quantity || 1}</small>
+                                    </p>
+                                    <p class="card-text">
+               <small class="text-muted">StK: ${obj.Stock || 0}</small>
+                               </p
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+        });
+    }
+</script>
+
+<div id="dvCart" class="clsCart" style="display:none">
+    <button class="btn btn-sm btn-danger " onclick="HideCart()">Close Cart</button>
+    <hr />
+
+    <div id="divCartItems" style="overflow-y:auto;overflow-x:hidden;height: 450px; ">
+        <!-- Cart items will be populated here -->
+    </div>
+
+
+    <div class="">
+        <strong class="ms-3">Total Price : </strong>
+        <span id="CartTotalPrice" class="fw-bold">$0.00</span>
+    </div>
+    <div class="row ms-2">
+        @*<div class="col-md-4">
+            <button class="btn btn-primary" onclick="window.location.href='@Url.Action("CartDetails", "Equipment")'">
+                View Cart
+            </button>
+        </div>*@
+        <div class="col-md-4">
+            <button class="btn btn-success" onclick="window.location.href='@Url.Action("Checkout", "Equipment")'">
+                Checkout
+            </button>
+        </div>
+
+
+    </div>
+</div>
+
