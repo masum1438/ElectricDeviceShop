@@ -96,7 +96,4 @@ This system provides a robust foundation for equipment inventory management, wit
 
 
 
-## Contact
 
-Created by [Your Name](https://github.com/yourusername).  
-For issues or contributions, please open an issue or submit a pull request.
